@@ -338,7 +338,3 @@ async def delete_string(string_value: str):
     conn.close()
     
     return JSONResponse(status_code=204, content={})
-
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
