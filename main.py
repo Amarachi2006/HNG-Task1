@@ -339,7 +339,7 @@ async def delete_string(string_value: str):
     
     return JSONResponse(status_code=204, content={})
 
-if __name__ = "__main__":
+if __name__ == "__main__":
     import os
     import uvicorn
     port = int(os.getenv("PORT", 8000))
